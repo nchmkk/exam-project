@@ -2,11 +2,10 @@
     display: none;
     position: relative;
     align-self: center;
-    // position: absolute;
-    // right: 0;
-    // top: 0;
+    transition: 0.2s ease;
+    // z-index: 3;
 
-    @media (max-width:826px) {
+    @media (max-width:945px) {
         display: block;
         height: 16px;
         width: 20px;
@@ -65,10 +64,6 @@
 .burger-menu:hover::after{
     visibility: visible;
 }
-
-// .burger-button:hover .burger-menu::after{
-//     display: block;
-// }
 
 .burger-menu .menu{
     flex-direction: column;
