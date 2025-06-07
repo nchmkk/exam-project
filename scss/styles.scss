@@ -20,6 +20,7 @@ body{
     top: 0;
     width: 100vw;
     background-color: #F5D7B5;
+    z-index: 4;
 }
 
 .header-container{
@@ -50,7 +51,7 @@ body{
     transition-duration: 0.2s;
 
     &hover{
-        transform: scale(1.1);
+        transform: scale(1.05);
         transition-duration: 0.2s;
     }
 }
@@ -91,7 +92,6 @@ body{
 }
 
 .burger-menu{
-
     .list-item{
         margin-bottom: toRem(25);
     }
@@ -185,7 +185,7 @@ body{
 
     &:hover{
         background: #472a24;
-        transform: scale(1.1);
+        transform: scale(1.05);
         transition: transform 0.3s ease-in-out;
     }
 
@@ -286,6 +286,12 @@ body{
     padding: toRem(30);
     width: 100%;
     height: 100%;
+    transition: 0.2s;
+
+    &:hover{
+        scale: 1.05;
+        transition: 0.2s;
+    }
 
     @media (max-width: toRem(800)){
         padding: toRem(10);
@@ -616,7 +622,6 @@ textarea{
 }
 
 .news-image{
-
     &:first-of-type{
         max-height: toRem(395);
 

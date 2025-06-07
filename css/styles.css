@@ -226,6 +226,7 @@ body {
   top: 0;
   width: 100vw;
   background-color: #F5D7B5;
+  z-index: 4;
 }
 
 .header-container {
@@ -268,9 +269,9 @@ body {
           transition-duration: 0.2s;
 }
 .logohover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
@@ -423,9 +424,9 @@ body {
 }
 .button:hover, .form-button:hover {
   background: #472a24;
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
@@ -536,6 +537,13 @@ body {
   padding: 1.875rem;
   width: 100%;
   height: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.products-list-item:hover {
+  scale: 1.05;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 @media (max-width: 50rem) {
   .products-list-item {
